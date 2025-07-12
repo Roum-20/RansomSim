@@ -45,6 +45,9 @@ You can easily extend this list inside `app.py`.
 ```bash
 streamlit run app.py
 ```
+
+---
+
 ## 🔐 Safety Notice
 1.This is strictly a simulation.
 
@@ -53,6 +56,8 @@ streamlit run app.py
 3.No real threats, spreading, or persistence.
 
 4.Always use sample files, never sensitive data.
+
+---
 
 ## ⚠️Legal Notice:
 This tool is intended only for authorized testing and educational purposes.
