@@ -32,7 +32,8 @@ folder = st.text_input("📂 Enter folder path to simulate attack")
 
 all_types = [
     ".txt", ".pdf", ".docx", ".jpg", ".png", ".csv", ".xlsx",
-    ".pptx", ".mp3", ".mp4", ".json", ".xml", ".html", ".css", ".js"
+    ".pptx", ".mp3", ".mp4", ".json", ".xml", ".html", ".css", ".js",
+    ".py", ".java", ".cpp", ".c", ".cs", ".php", ".rb", ".go", ".ts", ".sql"
 ]
 if st.checkbox("Select all file types"):
     file_types = all_types
