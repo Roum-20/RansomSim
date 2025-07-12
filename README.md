@@ -54,3 +54,5 @@ streamlit run app.py
 
 4.Always use sample files, never sensitive data.
 
+## ⚠️Legal Notice:
+This tool is intended only for authorized testing and educational purposes.
