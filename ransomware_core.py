@@ -29,9 +29,11 @@ def decrypt_file(file_path, key):
     except Exception:
         return False
 
+# Updated to include recursive file scanning
 def list_target_files(folder_path, allowed_extensions):
-    return [
-        os.path.join(folder_path, f)
-        for f in os.listdir(folder_path)
-        if os.path.splitext(f)[1].lower() in allowed_extensions and os.path.isfile(os.path.join(folder_path, f))
-    ]
+    matched_files = []
+    for root, _, files in os.walk(folder_path):
+        for file in files:
+            if os.path.splitext(file)[1].lower() in allowed_extensions:
+                matched_files.append(os.path.join(root, file))
+    return matched_files
